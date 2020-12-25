@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tree">
+        <div id="top" class="bush"></div> 
+        <div id="mid" class="bush"></div> 
+        <div id="bottom" class="bush"></div>
+        <div class="wood"></div>
+    </div>
+    <h1 class="message">Marry Chistmas!</h1>
+    <div class="tree">
+        <div id="top" class="bush"></div> 
+        <div id="mid" class="bush"></div> 
+        <div id="bottom" class="bush"></div>
+        <div class="wood"></div>
+    </div>
+</body>
+<style>
+    .message{
+        display: flex;
+        justify-content: center;
+    }
+    .tree{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wood{
+        margin-top: 16px;
+        width: 20px;
+        height: 40px;
+        background-color: brown;
+    }
+    .bush{
+        width: 0px;
+        height: 0px;
+        border-top: 50px solid none;
+        border-bottom: 50px solid green;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        margin-bottom: -16px;
+    }
+    #mid{
+        border-bottom: 50px solid green;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+    }
+    #bottom{
+        border-bottom: 50px solid green;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+    }
+</style>
+</html>
